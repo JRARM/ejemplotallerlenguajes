@@ -1,0 +1,8 @@
+{% extends 'homemaster.html' %}
+{% block body %}
+<form method="POST">
+    {% csrf_token %}{{form.as_p}}
+    <button type="submit" class="btn btn-success">
+        agregarinfo
+    </button>
+    {% endblock %}
